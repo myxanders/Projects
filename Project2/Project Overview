@@ -1,0 +1,4 @@
+# This was a project done in Software Development II during the Fall Semester of 2015. The goal of the projects was to create
+# a form for students to enter information and select appropriate on-campus housing based on their information entered.
+# Results were tracked in a table in localhost/phpmyadmin.
+# These files were written to be run via XAMPP. The project was also completed for use via cloud9 server.
