@@ -1,5 +1,3 @@
-﻿DROP TABLE ZIPCode;
-
 --Create the ZIPCode table
 CREATE TABLE IF NOT EXISTS ZIPCode (
 	ZIPCode		integer		not null unique,
