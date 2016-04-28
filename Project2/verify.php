@@ -1,3 +1,4 @@
+<!-- @authors: Mitchell Xanders, Reynaldo Alvarez-->
 <?php
 session_start(); //Let's start again
 ?>
