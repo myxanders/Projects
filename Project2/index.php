@@ -50,7 +50,7 @@ session_start(); //Let's start the session!
 					<h1><strong> Residence Request Form </strong></h1> <!-- This is the title at the top of the form. --> 
 				    	<form action="verify.php" method="post"> <!-- This sends the completed form to verify once the button is pressed. -->
 							<div id="form">
-								<label>Full Name: </label><input type="text" name="Name" required="required" autofocus="autofocus" value="<?php $_SESSION['Name']; ?>"> <br> <br> <!--You insert your full name into a textbox.-->
+								<label>Full Name: </label><input type="text" name="Name" required="required" autofocus="autofocus"> <br> <br> <!--You insert your full name into a textbox.-->
 								<label>CWID: </label><input type="text" name="CWID" required="required" maxlength="8"> <br> <br><!--You insert your CWID into a textbox-->
 								<label>Gender: </label><input type="radio" name="Gender" required="required" value="Male"> M <!-- This creates radio buttons for the male and female gender-->
 										<input type="radio" name="Gender" value="Female"> F <br> <br>	
