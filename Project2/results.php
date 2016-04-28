@@ -1,3 +1,4 @@
+<!-- @authors: Mitchell Xanders, Reynaldo Alvarez-->
 <?php 
 require 'sql.php'; //We need sql.php for this page
 session_start(); //Begins the session
