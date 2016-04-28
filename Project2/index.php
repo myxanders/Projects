@@ -1,3 +1,4 @@
+<!-- @authors: Mitchell Xanders, Reynaldo Alvarez-->
 <?php
 require'sql.php'; //We need sql.php to run this page
 $result = mysqli_query($conn, "SELECT name, vacancy FROM $table"); //We are defining our results here.
