@@ -1,0 +1,38 @@
+.leftButton {
+	padding-bottom: 10%;
+    padding-top: 10%;
+    width: 33%;
+}
+
+.leftButton:hover {
+    cursor: pointer;
+}
+
+.rightButton {
+    background-image: url("../../assets/Background/handshake.jpg");    
+	margin-left: 5%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    width: 34%;
+    margin-top: -20%;
+}
+
+.rightButton:hover {
+    cursor: pointer;
+}
+
+.containerApps {
+	background-color: white;
+    padding: 2%;
+    border-radius: 8px;
+    margin: 10%  auto;
+    margin-top: 3%;
+    width: 50%;
+    border: solid #f44336;
+ }
+
+ .adminHead {
+    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-width:1px;
+    text-shadow: 2px 2px black;
+ }

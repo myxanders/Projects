@@ -1,0 +1,53 @@
+/* ------- Admin Process Requests Page CSS ------- */
+
+.requests {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.requests td, .requests th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-transform: capitalize;
+}
+
+.requests tr{
+    background-color: #f2f2f2;
+}
+
+.requests tr:hover {background-color: #f3ebb7;}
+
+.requests th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #f44336;
+    color: white;
+}
+
+.table {
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow-x: scroll;
+}
+
+.table::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.table::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: transparent;
+}
+
+.table::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #f44336;
+}

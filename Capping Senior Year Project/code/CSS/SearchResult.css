@@ -1,0 +1,53 @@
+/* ------- Search Result Page CSS ------- */
+
+.employee {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.employee td, .employee th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-transform: capitalize;
+}
+
+.employee tr{
+    background-color: #f2f2f2;
+}
+
+.employee tr:hover {background-color: #f3ebb7;}
+
+.employee th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f44336;
+    color: white;
+}
+
+.table {
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow-x: scroll;
+}
+
+.table::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.table::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: transparent;
+}
+
+.table::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #f44336;
+}

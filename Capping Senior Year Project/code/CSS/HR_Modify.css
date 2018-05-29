@@ -1,0 +1,16 @@
+#employeeModify {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 40px auto;
+    width: 50%;
+    border: solid #f44336;
+}
+
+.employeeModify {
+    width:119px; 
+    margin: -20px -135px;
+    position:relative;
+    top:50%; 
+    left:50%;
+}

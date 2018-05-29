@@ -1,0 +1,61 @@
+/*------------------About Page--------------------*/
+.body1 {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 13%;
+    margin-bottom: 5%;
+    background-color: white;
+    padding: 5%;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.body2 {
+    display: inline-block;
+    padding: 4%;
+}
+
+.media {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background-color: white;
+    border-color: grey;
+}
+
+#mail {
+    color: grey;
+}
+
+#mail:hover {
+    color: red;
+    border-color: red;
+}
+
+#fb {
+    color: grey;
+}
+
+#fb:hover {
+    color: #3b5998;
+    border-color: #3b5998;
+}
+
+#tweet {
+    color: grey;
+}
+
+#tweet:hover {
+    color: #00aced;
+    border-color: #00aced;
+}
+
+#guestHR {
+    color: grey;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.aboutInfo {
+    
+}
