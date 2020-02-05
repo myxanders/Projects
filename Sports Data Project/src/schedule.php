@@ -520,6 +520,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	//Put AFC and NFC Championship Game winners in the Super Bowl.
 	if ($wknum == 20) {
+		$yr_check = mysqli_query($db, "SELECT * FROM whatif_superbowl WHERE year = $year");
+		if (mysqli_num_rows($yr_check) == 0){
+			mysqli_query($db, "INSERT INTO whatif_superbowl (`year`) VALUES ($year)");
+		}		
 		$sqla = mysqli_query($db, "SELECT * FROM nflweek20 WHERE game = 'AFCCG'");
 		$r = mysqli_fetch_array($sqla);
 		$home = $r['homescore'];
@@ -565,10 +569,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$afcnickname = $sba['team'];
 		$afcid = $sba['tid'];
 		if ($nfc > $afc) {
-			$sb = mysqli_query($db, "UPDATE superbowls SET winners = '$nfcteam', losers = '$afcteam', winnerid = '$nfcid', loserid = '$afcid', winningteam = '$nfcnickname', losingteam = '$afcnickname', winningscore = '$nfc', losingscore = '$afc' WHERE year = $year;");
+			$sb = mysqli_query($db, "UPDATE superbowls SET winners = '$nfcteam', losers = '$afcteam', winnerid = '$nfcid', loserid = '$afcid', winningteam = '$nfcnickname', losingteam = '$afcnickname', winningscore = '$nfc', losingscore = '$afc' WHERE season = $year;");
 			mysqli_query($db, "UPDATE nflteams SET sbwins = sbwins+1 WHERE tid = $nfcid");
 		} elseif ($afc > $nfc) {
-			$sb = mysqli_query($db, "UPDATE superbowls SET winners = '$afcteam', losers = '$nfcteam', winnerid = '$afcid', loserid = '$nfcid', winningteam = '$afcnickname', losingteam = '$nfcnickname', winningscore = '$afc', losingscore = '$nfc' WHERE year = $year;");
+			$sb = mysqli_query($db, "UPDATE superbowls SET winners = '$afcteam', losers = '$nfcteam', winnerid = '$afcid', loserid = '$nfcid', winningteam = '$afcnickname', losingteam = '$nfcnickname', winningscore = '$afc', losingscore = '$nfc' WHERE season = $year;");
 			mysqli_query($db, "UPDATE nflteams SET sbwins = sbwins+1 WHERE tid = $afcid");
 		}
 	}
