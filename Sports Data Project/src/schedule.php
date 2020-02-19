@@ -569,11 +569,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$afcnickname = $sba['team'];
 		$afcid = $sba['tid'];
 		if ($nfc > $afc) {
-			$sb = mysqli_query($db, "UPDATE superbowls SET winners = '$nfcteam', losers = '$afcteam', winnerid = '$nfcid', loserid = '$afcid', winningteam = '$nfcnickname', losingteam = '$afcnickname', winningscore = '$nfc', losingscore = '$afc' WHERE season = $year;");
-			mysqli_query($db, "UPDATE nflteams SET sbwins = sbwins+1 WHERE tid = $nfcid");
+			mysqli_query($db, "UPDATE superbowls SET winners = '$nfcteam', losers = '$afcteam', winnerid = '$nfcid', loserid = '$afcid', winningteam = '$nfcnickname', losingteam = '$afcnickname', winningscore = '$nfc', losingscore = '$afc' WHERE season = $year;");
+			$sb = mysqli_query($db, "UPDATE nflteams SET sbwins = (SELECT COUNT(*) FROM superbowls WHERE winnerid = $nfcid) WHERE tid = $nfcid");
+
 		} elseif ($afc > $nfc) {
-			$sb = mysqli_query($db, "UPDATE superbowls SET winners = '$afcteam', losers = '$nfcteam', winnerid = '$afcid', loserid = '$nfcid', winningteam = '$afcnickname', losingteam = '$nfcnickname', winningscore = '$afc', losingscore = '$nfc' WHERE season = $year;");
-			mysqli_query($db, "UPDATE nflteams SET sbwins = sbwins+1 WHERE tid = $afcid");
+			mysqli_query($db, "UPDATE superbowls SET winners = '$afcteam', losers = '$nfcteam', winnerid = '$afcid', loserid = '$nfcid', winningteam = '$afcnickname', losingteam = '$nfcnickname', winningscore = '$afc', losingscore = '$nfc' WHERE season = $year;");
+			$sb = mysqli_query($db, "UPDATE nflteams SET sbwins = (SELECT COUNT(*) FROM superbowls WHERE winnerid = $afcid) WHERE tid = $afcid");
 		}
 	}
 }
