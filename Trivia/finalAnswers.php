@@ -5,6 +5,7 @@ $n = "<br>";
 $sp = "&nbsp";
 $tab = $sp . $sp . $sp . $sp;
 
+//Collect final wagers
 $sql = mysqli_query($conn, "SELECT * FROM players ORDER by player_num ASC");
 $j = 1;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -37,6 +38,7 @@ while ($k <= mysqli_num_rows($query) && $q = mysqli_fetch_array($query)) {
     <link rel="icon" href="favicon2.ico">
 </head>
 <script>
+// Reveal the correct answers one at a time. This builds suspense and mimics the in-person method of revealing answers.
     var answers = ['answer1', 'answer2', 'answer3', 'answer4'];
 
     function showAnswer() {
@@ -81,6 +83,7 @@ while ($k <= mysqli_num_rows($query) && $q = mysqli_fetch_array($query)) {
             ?>
         </table>
         <br>
+        <!-- With wagers already in, mark who got the order correct. -->
         <form action="finalTally.php" method="post">
             <br>
             <br>
