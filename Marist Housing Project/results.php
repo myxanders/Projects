@@ -41,7 +41,7 @@ else {//If the user picks a residence area on verify.php, this does the same.
 }
 ?>
 <html>
-<title>Marist Residence Recommendations</title> <!--Again, our site title-->
+<title>Marist Residence Confirmation</title> <!--Again, our site title-->
 <head>
 	<link rel="stylesheet" type="text/css" href="housingstyle.css">
 </head>

@@ -5,7 +5,7 @@ $result = mysqli_query($conn, "SELECT name, vacancy FROM $table"); //We are defi
 session_start(); //Let's start the session!
 ?>
 <html>
-<title><?php echo "Yeet"; ?> Residence Recommendations</title> <!-- This is the title of our page-->
+<title>Marist Residence Recommendations</title> <!-- This is the title of our page-->
 
 <head>
 	<link rel="stylesheet" type="text/css" href="housingstyle.css">
