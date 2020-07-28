@@ -46,7 +46,7 @@ INSERT INTO `categories` (`category_id`, `category`) VALUES
 (4, 'Business'),
 (5, 'Geography'),
 (6, 'History'),
-(7, 'Language')
+(7, 'Language'),
 (8, 'Literature'),
 (9, 'Math'),
 (10, 'Movies'),
