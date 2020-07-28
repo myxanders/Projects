@@ -1,6 +1,5 @@
 <?php
-	require 'sql_helper.php'; //We're going to need this to help us
-
+	include('sql_helper.php'); //We're going to need this to help us
 //Create our database if it hasn't been made yet
 	 if (!mysqli_select_db($conn, $dbname)) {
 		$sql = "CREATE DATABASE $dbname";

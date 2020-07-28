@@ -3,54 +3,9 @@
 session_start(); //Let's start again
 ?>
 <html>
-<title>Hack Attack Residence Recommendations</title> <!--Reminder of what our site is titled-->
+<title>Marist Residence Recommendations</title> <!--Reminder of what our site is titled-->
 <head>
-	<style type="text/css"> /*Some CSS to spice up our lives*/
-		
-		#content.absolute {
-			position: absolute;
-			width: 100%;
-			right: 0;
-			top: 60px;
-		}
-		
-		#box.absolute {
-			position: absolute;
-			width: 500px;
-			height: auto;
-			background-color: #eeeeee;
-			padding: 15px;
-			border: 15px solid black;
-			margin-left: 31%;
-		}
-		
-		body {
-			background: #c8102e;
-		}
-		
-		label {
-			display: inline-block;
-			text-align: center;
-		}
-		
-		input {
-			display: inline-block;
-		}
-		
-		h1 {
-			text-align: center;
-			font-size: 36pt;
-		}
-		
-		#Continue {
-			text-align: center;
-		}
-
-		#Back {
-			text-align: center;
-		}
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="housingstyle.css">
 </head>
 	<body>
 		<div class ="absolute" id="content">	
@@ -104,23 +59,23 @@ session_start(); //Let's start again
 												if($Class == 1) {
 												echo "<p><center><strong><font color=\"green\">$Confirm</font></strong></center></p>";
 												?>
-												<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-												<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+												<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+												<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 												<?php
 												}
 												else {
 													echo "<p><center><strong><font color=\"red\">$FrOnly</font></strong></center></p>";
 													?>
-													<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-													<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+													<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+													<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 													<?php
 												}
 											}
 											else {
 												echo "<p><center><strong><font color=\"red\">$PrefError</font></strong></center></p>";
 												?>
-												<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-												<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+												<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+												<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 												<?php
 											}
 										}
@@ -130,23 +85,23 @@ session_start(); //Let's start again
 												if($Class == 2) {
 													echo "<p><center><strong><font color=\"green\">$Confirm</font></strong></center></p>";
 													?>
-													<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-													<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+													<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+													<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 													<?php
 												}
 												else {
 													echo "<p><center><strong><font color=\"red\">$SoOnly</font></strong></center></p>";
 													?>
-													<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-													<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+													<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+													<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 													<?php
 												}
 											}
 											else {
 												echo "<p><center><strong><font color=\"red\">$PrefError</font></strong></center></p>";
 												?>
-												<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-												<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+												<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+												<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 												<?php
 											}
 										}
@@ -156,23 +111,23 @@ session_start(); //Let's start again
 												if($Class == 2) {
 													echo "<p><center><strong><font color=\"green\">$Confirm</font></strong></center></p>";
 													?>
-													<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-													<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+													<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+													<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 													<?php
 												}
 												else {
 													echo "<p><center><strong><font color=\"red\">$SoOnly</font></strong></center></p>";
 													?>
-													<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-													<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+													<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+													<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 													<?php
 												}
 											}
 											else {
 												echo "<p><center><strong><font color=\"red\">$PrefError</font></strong></center></p>";
 												?>
-												<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-												<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+												<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+												<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 												<?php
 											}
 										}
@@ -182,22 +137,22 @@ session_start(); //Let's start again
 												if($Class == 2) {
 													echo "<p><center><strong><font color=\"green\">$Confirm</font></strong></center></p>";
 													?>
-													<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-													<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+													<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+													<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 													<?php
 												}
 												else {
 													echo "<p><center><strong><font color=\"red\">$SoOnly</font></strong></center></p>";
 													?>
-													<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-													<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+													<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+													<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 													<?php
 												}
 											}else {
 												echo "<p><center><strong><font color=\"red\">$PrefError</font></strong></center></p>";
 												?>
-												<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-												<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+												<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+												<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 												<?php
 											}
 										}
@@ -207,23 +162,23 @@ session_start(); //Let's start again
 												if($Class == 3) {
 													echo "<p><center><strong><font color=\"green\">$Confirm</font></strong></center></p>";
 													?>
-													<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-													<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+													<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+													<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 													<?php
 												}
 												else {
 													echo "<p><center><strong><font color=\"red\">$JrSrOnly</font></strong></center></p>";
 													?>
-													<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-													<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+													<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+													<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 													<?php
 												}
 											}
 											else {
 												echo "<p><center><strong><font color=\"red\">$PrefError</font></strong></center></p>";
 												?>
-												<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-												<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+												<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+												<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 												<?php
 											}
 										} 
@@ -233,23 +188,23 @@ session_start(); //Let's start again
 												if($Class == 3) {
 													echo "<p><center><strong><font color=\"green\">$Confirm</font></strong></center></p>";
 													?>
-													<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-													<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+													<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+													<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 													<?php
 												}
 												else {
 													echo "<p><center><strong><font color=\"red\">$JrSrOnly</font></strong></center></p>";
 													?>
-													<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-													<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+													<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+													<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 													<?php
 												}
 											}
 											else {
 												echo "<p><center><strong><font color=\"red\">$PrefError</font></strong></center></p>";
 												?>
-												<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-												<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+												<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+												<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 												<?php
 											}
 										}
@@ -260,20 +215,20 @@ session_start(); //Let's start again
 												if($Laundry !== "No" && $Kitchen !== "Yes") {
 													?>
 													<!--This is where you pick a place for yourself now that we've narrowed it down for you-->
-													<center><label>Pick a Residence Area: </label></center> <br>
+													<center><label id="pick">Pick a Residence Area: </label></center> <br>
 													<center><input type="radio" name="PrefResArea" value="Champagnat" checked="true"> Champagnat Hall </center><br>
 										 		 	<center><input type="radio" name="PrefResArea" value="Leo"> Leo Hall </center><br>
 										 		 	<center><input type="radio" name="PrefResArea" value="Marian"> Marian Hall </center><br>
 										 		 	<center><input type="radio" name="PrefResArea" value="Sheahan"> Sheahan Hall </center><br>
-													<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-													<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>		
+													<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+													<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>		
 																<?php
 												}
 												else { //If you don't qualify for these dorms
 													echo "<p><center><strong><font color=\"red\">$Error</font></strong></center></p>";
 													?>
-													<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-													<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+													<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+													<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 													<?php
 												}	
 											}
@@ -284,33 +239,33 @@ session_start(); //Let's start again
 													if($Kitchen == "Yes") {
 														//And a kitchen
 														?>
-															<center><label>Pick a Residence Area: </label></center> <br>
+															<center><label id="pick">Pick a Residence Area: </label></center> <br>
 															<center><input type="radio" name="PrefResArea" value="Gartland" checked="true"> Gartland Commons </center><br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Lower New"> Lower New Townhouses </center><br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Upper New"> Upper New Townhouses </center><br>
-											 		 		<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-															<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>	
+											 		 		<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+															<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>	
 														<?php
 													}
 													elseif($Kitchen == "No") {
 														//And no kitchen
 														?>
-															<center><label>Pick a Residence Area: </label></center> <br>
+															<center><label id="pick">Pick a Residence Area: </label></center> <br>
 															<center><input type="radio" name="PrefResArea" value="Midrise" checked="true"> Midrise Hall </center></br>
-															<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-															<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+															<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+															<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 														<?php
 													}
 													else {
 														//If you care about where you do your laundry but not where you eat your food
 														?>
-															<center><label>Pick a Residence Area: </label></center> <br>
+															<center><label id="pick">Pick a Residence Area: </label></center> <br>
 															<center><input type="radio" name="PrefResArea" value="Gartland" checked="true"> Gartland Commons </center><br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Lower New"> Lower New Townhouses </center><br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Midrise"> Midrise Hall </center></br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Upper New"> Upper New Townhouses </center><br>
-											 		 		<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-															<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+											 		 		<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+															<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 																<?php
 													}
 												}
@@ -319,18 +274,18 @@ session_start(); //Let's start again
 													if($Kitchen !== "No") {
 														//But it has a full kitchen
 														?>
-															<center><label>Pick a Residence Area: </label></center> <br>
+															<center><label id="pick">Pick a Residence Area: </label></center> <br>
 															<center><input type="radio" name="PrefResArea" value="Foy" checked="true"> Foy Townhouses </center><br>
-															<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-															<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+															<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+															<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 																<?php
 													}
 													else {
 														//You messed up somewhere
 														echo "<p><center><strong><font color=\"red\">$Error</font></strong></center></p>";
 														?>
-														<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-														<p id="Continue"><input type="button" value="Continue >>" name="continue" disabled></p>
+														<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+														<center><p id="Continue"><input type="button" value="Continue >>" name="continue" disabled></p></center>
 														<?php
 													}
 												}
@@ -339,35 +294,35 @@ session_start(); //Let's start again
 													if ($Kitchen == "Yes") {
 														//But want your own kitchen
 														?>
-															<center><label>Pick a Residence Area: </label></center> <br>
+															<center><label id="pick">Pick a Residence Area: </label></center> <br>
 															<center><input type="radio" name="PrefResArea" value="Foy" checked="true"> Foy Townhouses </center></br>
 															<center><input type="radio" name="PrefResArea" value="Gartland"> Gartland Commons </center><br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Lower New"> Lower New Townhouses </center><br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Upper New"> Upper New Townhouses </center><br>
-											 		 		<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-															<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+											 		 		<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+															<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 																<?php
 													}
 													elseif($Kitchen == "No Preference") {
 														//or you're just really easy-going.
 														?>
-															<center><label>Pick a Residence Area: </label></center> <br>
+															<center><label id="pick">Pick a Residence Area: </label></center> <br>
 															<center><input type="radio" name="PrefResArea" value="Foy" checked="true"> Foy Townhouses </center></br>
 															<center><input type="radio" name="PrefResArea" value="Gartland"> Gartland Commons </center><br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Lower New"> Lower New Townhouses </center><br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Midrise"> Midrise Hall </center></br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Upper New"> Upper New Townhouses </center><br>
-											 		 		<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-															<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+											 		 		<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+															<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 																<?php
 													}
 													else {
 														//There's no kitchen here.
 														?>
-															<center><label>Pick a Residence Area: </label></center> <br>
+															<center><label id="pick">Pick a Residence Area: </label></center> <br>
 															<center><input type="radio" name="PrefResArea" value="Midrise" checked="true"> Midrise Hall </center></br>
-															<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-															<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+															<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+															<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 																<?php
 													}	
 												}
@@ -379,19 +334,19 @@ session_start(); //Let's start again
 													if($Kitchen !== "No") {
 														//All these places have full kitchens so you're going to have one
 														?>
-															<center><label>Pick a Residence Area: </label></center> <br>
+															<center><label id="pick">Pick a Residence Area: </label></center> <br>
 															<center><input type="radio" name="PrefResArea" value="Middle Fulton" checked="true"> Middle Fulton Townhouses </center></br>
 															<center><input type="radio" name="PrefResArea" value="Upper Fulton"> Upper Fulton Townhouses </center><br>
-															<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-															<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+															<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+															<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 															<?php
 													}
 													else {
 														//Or else you get this error
 														echo "<p><center><strong><font color=\"red\">$Error</font></strong></center></p>";
 														?>
-														<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-														<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+														<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+														<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 														<?php
 													}
 												}
@@ -400,21 +355,21 @@ session_start(); //Let's start again
 													if($Kitchen !== "No") {
 														//There are still no options without a kitchen
 														?>
-															<center><label>Pick a Residence Area: </label></center> <br>
+															<center><label id="pick">Pick a Residence Area: </label></center> <br>
 															<center><input type="radio" name="PrefResArea" value="Lower Fulton" checked="true"> Lower Fulton Townhouses </center></br>
 															<center><input type="radio" name="PrefResArea" value="Lower West"> Lower West Townhouses </center><br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Talmadge"> Talmadge Court </center><br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Upper West"> Upper West Townhouses </center></br>
-											 		 		<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-															<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+											 		 		<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+															<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 											 		 		<?php
 													}
 													else {
 														//Mistakes will be made
 														echo "<p><center><strong><font color=\"red\">$Error</font></strong></center></p>";
 														?>
-														<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-														<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+														<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+														<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 														<?php
 													}
 												}
@@ -423,23 +378,23 @@ session_start(); //Let's start again
 													if($Kitchen !== "No") {
 														//The houses are all pretty much the same then
 														?>
-															<center><label>Pick a Residence Area: </label></center> <br>
+															<center><label id="pick">Pick a Residence Area: </label></center> <br>
 															<center><input type="radio" name="PrefResArea" value="Lower Fulton" checked="true"> Lower Fulton Townhouses </center></br>
 															<center><input type="radio" name="PrefResArea" value="Lower West"> Lower West Townhouses </center><br>
 															<center><input type="radio" name="PrefResArea" value="Middle Fulton"> Middle Fulton Townhouses </center></br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Talmadge"> Talmadge Court </center><br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Upper Fulton"> Upper Fulton Townhouses </center><br>
 											 		 		<center><input type="radio" name="PrefResArea" value="Upper West"> Upper West Townhouses </center></br>
-											 		 		<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-															<p id="Continue"><input type="submit" value="Continue >>" name="continue"></p>
+											 		 		<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+															<center><p id="Continue"><input type="submit" value="Continue >>" name="continue"></p></center>
 											 		 		<?php
 													}
 													else {
 														//No matches
 														echo "<p><center><strong><font color=\"red\">$Error</font></strong></center></p>";
 														?>
-														<p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p> 
-														<p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p>
+														<center><p id="Back"><input type="button" Onclick="history.back();" value="<< Back" name="back"></p></center> 
+														<center><p id="Continue"><input type="submit" value="Continue >>" name="continue" disabled></p></center>
 														<?php
 													}
 												}

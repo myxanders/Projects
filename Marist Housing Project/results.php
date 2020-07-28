@@ -41,48 +41,9 @@ else {//If the user picks a residence area on verify.php, this does the same.
 }
 ?>
 <html>
-<title>Hack Attack Residence Recommendations</title> <!--Again, our site title-->
+<title>Marist Residence Recommendations</title> <!--Again, our site title-->
 <head>
-	<style type="text/css"> /*We want our page to look nice for you*/
-		#content.absolute {
-			position: absolute;
-			width: 100%;
-			right: 0;
-			top: 60px;
-		}
-		#box.absolute {
-			position: absolute;
-			width: 500px;
-			height: auto;
-			background-color: #eeeeee;
-			padding: 15px;
-			border: 15px solid black;
-			margin-left: 31%;
-		}
-		body {
-			background: #c8102e;
-		}
-		label {
-			display: inline-block;
-			float: left;
-			clear: left;
-			width: 50%;
-			text-align: right;
-		}
-		input {
-			display: inline-block;
-		}
-		h1 {
-			text-align: center;
-			font-size: 36pt;
-		}
-		#Continue {
-			text-align: center;
-		}
-		#Back {
-			text-align: center;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="housingstyle.css">
 </head>
 	<body>
 		<div class ="absolute" id="content">	
