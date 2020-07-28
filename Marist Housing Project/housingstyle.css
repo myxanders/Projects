@@ -1,0 +1,72 @@
+#content.absolute {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 60px;
+}
+
+#box.absolute {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    background-color: #eeeeee;
+    padding: 15px;
+    border: 15px solid black;
+    margin-left: 31%;
+}
+
+body {
+    background: #c8102e;
+    background-image:url("maristseal40.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-size: 50%;
+}
+
+label {
+    display: inline-block;
+    clear: left;
+    width: 50%;
+    text-align: right;
+}
+
+label#pick {
+    float: none;
+    width: auto;
+}
+
+input {
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36pt;
+}
+
+#Submit {
+    text-align: center;
+}
+
+input[type="submit"], input[type="button"]{
+    cursor: pointer;
+}
+
+
+input[type="radio"] {
+    width: 12px;
+    height: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+input[type="radio"]:checked {
+    background-color: #c8102e;
+    border: 1px solid black;
+    border-radius: 10px;
+}
