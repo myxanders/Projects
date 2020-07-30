@@ -38,7 +38,7 @@ include('manager_check.php');
 				</button>
 
 				<button class="app" onclick="window.location.href='reportsTo.php'">
-					<img padding="10px" src="../../assets/team.png"><br><br>Check Out Your ACME Team</img>
+					<img padding="10px" src="../../assets/team.png"><br><br>Your ACME Team</img>
 				</button>
 
                 <div class="clear"></div>
