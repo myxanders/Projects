@@ -130,6 +130,6 @@ while ($k <= mysqli_num_rows($query) && $q = mysqli_fetch_array($query)) {
     input[type="checkbox"]:checked {
         background-color: greenyellow;
         border-radius: 3px;
-        border: 1px solid white;
+        border: 1px solid black;
     }
 </style>
