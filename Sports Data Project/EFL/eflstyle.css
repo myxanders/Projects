@@ -1,0 +1,579 @@
+body {
+    font-family: 'Cambo', Times, serif;
+}
+
+#ACC {
+    font-family: 'Cambo', Times, serif;
+    background: #C72A12;
+    color: white;
+}
+
+#BOU {
+    font-family: 'Cambo', Times, serif;
+    background: #DA291C;
+    color: black;
+}
+
+#AWM {
+    font-family: 'Cambo', Times, serif;
+    background: #2b4690;
+    color: white;
+}
+
+#ARS {
+    font-family: 'Cambo', Times, serif;
+    background: #EF0107;
+    color: #063672;
+}
+
+#AVA {
+    font-family: 'Cambo', Times, serif;
+    background: #A3C5E9;
+    color: #7B003A;
+}
+
+#BRS {
+    font-family: 'Cambo', Times, serif;
+    background: #850101;
+    color: white;
+}
+
+#BRC {
+    font-family: 'Cambo', Times, serif;
+    background: #103BCE;
+    color: white;
+}
+
+#BBR {
+    font-family: 'Cambo', Times, serif;
+    background: #003366;
+    color: #FF0000;
+}
+
+#BLK {
+    font-family: 'Cambo', Times, serif;
+    background: black;
+    color: #ff5f00;
+}
+
+#BOL {
+    font-family: 'Cambo', Times, serif;
+    background: #000040;
+    color: #DF0024;
+}
+
+#BDC {
+    font-family: 'Cambo', Times, serif;
+    background: #83424A;
+    color: #FDB94E;
+}
+
+#BRE {
+    font-family: 'Cambo', Times, serif;
+    background: #E30613;
+    color: white;
+}
+
+#BHA {
+    font-family: 'Cambo', Times, serif;
+    background: #0057B8;
+    color: white;
+}
+
+#BSC {
+    font-family: 'Cambo', Times, serif;
+    background: #EE1814;
+    color: white;
+}
+
+#BRR {
+    font-family: 'Cambo', Times, serif;
+    background: #004b95;
+    color: #f7fa00;
+}
+
+#BUR {
+    font-family: 'Cambo', Times, serif;
+    background: #6C1D45;
+    color: #99D6EA;
+}
+
+#BRA {
+    font-family: 'Cambo', Times, serif;
+    background: #fff051;
+    color: black;
+}
+
+#BRY {
+    font-family: 'Cambo', Times, serif;
+    background: #000080;
+    color: #fff7b2;
+}
+
+#CMU {
+    font-family: 'Cambo', Times, serif;
+    background: #fbb947;
+    color: black;
+}
+
+#CDF {
+    font-family: 'Cambo', Times, serif;
+    background: #0070B5;
+    color: white;
+}
+
+#CRU {
+    font-family: 'Cambo', Times, serif;
+    background: #1D6FB7;
+    color: #F71335;
+}
+
+#CHA {
+    font-family: 'Cambo', Times, serif;
+    background: #d4021d;
+    color: black;
+}
+
+#CHE {
+    font-family: 'Cambo', Times, serif;
+    background: #034694;
+    color: white;
+}
+
+#CTT {
+    font-family: 'Cambo', Times, serif;
+    background: #de2229;
+    color: black;
+}
+
+#CLU {
+    font-family: 'Cambo', Times, serif;
+    background: #2191cc;
+    color: #f7c408;
+}
+
+#CVC {
+    font-family: 'Cambo', Times, serif;
+    background: #77bbff;
+    color: black;
+}
+
+#CRT {
+    font-family: 'Cambo', Times, serif;
+    background: #CC1F24;
+    color: white;
+}
+
+#CAX {
+    font-family: 'Cambo', Times, serif;
+    background: white;
+    color: #d52c1e;
+}
+
+#CRY {
+    font-family: 'Cambo', Times, serif;
+    background: #1B458F;
+    color: #C4122E;
+}
+
+#DRB {
+    font-family: 'Cambo', Times, serif;
+    background: black;
+    color: white;
+}
+
+#DNR {
+    font-family: 'Cambo', Times, serif;
+    background: #D72227;
+    color: white;
+}
+
+#EVE {
+    font-family: 'Cambo', Times, serif;
+    background: #003399;
+    color: white;
+}
+
+#EXE {
+    font-family: 'Cambo', Times, serif;
+    background: #e50038;
+    color: black;
+}
+
+#FLT {
+    font-family: 'Cambo', Times, serif;
+    background: #d91920;
+    color: black;
+}
+
+#FGR {
+    font-family: 'Cambo', Times, serif;
+    background: #adff2f;
+    color: black;
+}
+
+#FUL {
+    font-family: 'Cambo', Times, serif;
+    background: black;
+    color: #CC0000;
+}
+
+#GLG {
+    font-family: 'Cambo', Times, serif;
+    background: #1a5dad;
+    color: white;
+}
+
+#GBT {
+    font-family: 'Cambo', Times, serif;
+    background: black;
+    color: #E11E24;
+}
+
+#HUD {
+    font-family: 'Cambo', Times, serif;
+    background: #0E63AD;
+    color: white;
+}
+
+#HUL {
+    font-family: 'Cambo', Times, serif;
+    background: #FFAE00;
+    color: black;
+}
+
+#ISP {
+    font-family: 'Cambo', Times, serif;
+    background: #0E00F7;
+    color: #DE2C37;
+}
+
+#LEE {
+    font-family: 'Cambo', Times, serif;
+    background: #1558AD;
+    color: #FDE01A;
+}
+
+#LEI {
+    font-family: 'Cambo', Times, serif;
+    background: #003090;
+    color: #FDBE11;
+}
+
+#LNC {
+    font-family: 'Cambo', Times, serif;
+    background: #EB0027;
+    color: white;
+}
+
+#LIV {
+    font-family: 'Cambo', Times, serif;
+    background: #C8102E;
+    color: white;
+}
+
+#LUT {
+    font-family: 'Cambo', Times, serif;
+    background: #002e66;
+    color: #FE3C00;
+}
+
+#MCT {
+    font-family: 'Cambo', Times, serif;
+    background: #303185;
+    color: white;
+}
+
+#MCI {
+    font-family: 'Cambo', Times, serif;
+    background: #6CABDD;
+    color: #1C2C5B;
+}
+
+#MUN {
+    font-family: 'Cambo', Times, serif;
+    background: #DA291C;
+    color: #FBE122;
+}
+
+#MSF {
+    font-family: 'Cambo', Times, serif;
+    background: #2d579b;
+    color: #ffbf00;
+}
+
+#MID {
+    font-family: 'Cambo', Times, serif;
+    background: #FF0000;
+    color: white;
+}
+
+#MKD {
+    font-family: 'Cambo', Times, serif;
+    background: black;
+    color: #EF1C22;
+}
+
+#MLW {
+    font-family: 'Cambo', Times, serif;
+    background: #0C3273;
+    color: white;
+}
+
+#MRC {
+    font-family: 'Cambo', Times, serif;
+    background: #D31E2F;
+    color: white;
+}
+
+#NEW {
+    font-family: 'Cambo', Times, serif;
+    background: black;
+    color: #41B6E6;
+}
+
+#NPT {
+    font-family: 'Cambo', Times, serif;
+    background: black;
+    color: #FFA030;
+}
+
+#NHT {
+    font-family: 'Cambo', Times, serif;
+    background: #8B2942;
+    color: white;
+}
+
+#NOR {
+    font-family: 'Cambo', Times, serif;
+    background: #007020;
+    color: #FFEE00;
+}
+
+#NTG {
+    font-family: 'Cambo', Times, serif;
+    background: #FF0000;
+    color: white;
+}
+
+#NOT {
+    font-family: 'Cambo', Times, serif;
+    background: black;
+    color: #A4914F;
+}
+
+#OAT {
+    font-family: 'Cambo', Times, serif;
+    background: #003f8d;
+    color: white;
+}
+
+#OXF {
+    font-family: 'Cambo', Times, serif;
+    background: #214080;
+    color: #ffdd00;
+}
+
+#PTU {
+    font-family: 'Cambo', Times, serif;
+    background: #0075b2;
+    color: white;
+}
+
+#PLA {
+    font-family: 'Cambo', Times, serif;
+    background: #005045;
+    color: white;
+}
+
+#PTV {
+    font-family: 'Cambo', Times, serif;
+    background: black;
+    color: #ff9900;
+}
+
+#PTM {
+    font-family: 'Cambo', Times, serif;
+    background: #001489;
+    color: #e1e4f3;
+}
+
+#PTM {
+    font-family: 'Cambo', Times, serif;
+    background: #001489;
+    color: white;
+}
+
+#PNE {
+    font-family: 'Cambo', Times, serif;
+    background: white;
+    color: #08183b;
+}
+
+#QPR {
+    font-family: 'Cambo', Times, serif;
+    background: #1d5ba4;
+    color: white;
+}
+
+#RDG {
+    font-family: 'Cambo', Times, serif;
+    background: #004494;
+    color: white;
+}
+
+#RCH {
+    font-family: 'Cambo', Times, serif;
+    background: #293E99;
+    color: #BFC6CF;
+}
+
+#RTU {
+    font-family: 'Cambo', Times, serif;
+    background: #e21d25;
+    color: black;
+}
+
+#SCU {
+    font-family: 'Cambo', Times, serif;
+    background: #a83249;
+    color: #00acdd;
+}
+
+#SHU {
+    font-family: 'Cambo', Times, serif;
+    background: #ec2227;
+    color: black;
+}
+
+#SHF {
+    font-family: 'Cambo', Times, serif;
+    background: #0e62aa;
+    color: black;
+}
+
+#SHT {
+    font-family: 'Cambo', Times, serif;
+    background: #0057A8;
+    color: #FBB10B;
+}
+
+#SOU {
+    font-family: 'Cambo', Times, serif;
+    background: #D71920;
+    color: black;
+}
+
+#SEU {
+    font-family: 'Cambo', Times, serif;
+    background: #003a80;
+    color: white;
+}
+
+#STV {
+    font-family: 'Cambo', Times, serif;
+    background: #EE4033;
+    color: white;
+}
+
+#STK {
+    font-family: 'Cambo', Times, serif;
+    background: #e03a3e;
+    color: white;
+}
+
+#SUN {
+    font-family: 'Cambo', Times, serif;
+    background: #fd1220;
+    color: black;
+}
+
+#SWA {
+    font-family: 'Cambo', Times, serif;
+    background: white;
+    color: black;
+}
+
+#SWI {
+    font-family: 'Cambo', Times, serif;
+    background: #FD1220;
+    color: white;
+}
+
+#TOT {
+    font-family: 'Cambo', Times, serif;
+    background: #132257;
+    color: white;
+}
+
+#TRR {
+    font-family: 'Cambo', Times, serif;
+    background: #004494;
+    color: #bb0000;
+}
+
+#WSL {
+    font-family: 'Cambo', Times, serif;
+    background: #ed1a38;
+    color: black;
+}
+
+#WAT {
+    font-family: 'Cambo', Times, serif;
+    background: #FBEE23;
+    color: #ED2127;
+}
+
+#WBA {
+    font-family: 'Cambo', Times, serif;
+    background: #060067;
+    color: white;
+}
+
+#WHU {
+    font-family: 'Cambo', Times, serif;
+    background: #7A263A;
+    color: #F3D459;
+}
+
+#WIG {
+    font-family: 'Cambo', Times, serif;
+    background: #1d59af;
+    color: white;
+}
+
+#WFC {
+    font-family: 'Cambo', Times, serif;
+    background: #2F318B;
+    color: #FDD211;
+}
+
+#WLV {
+    font-family: 'Cambo', Times, serif;
+    background: #FDB913;
+    color: black;
+}
+
+#WYC {
+    font-family: 'Cambo', Times, serif;
+    background: #4eb6e3;
+    color: #003362;
+}
+
+#YEO {
+    font-family: 'Cambo', Times, serif;
+    background: #008000;
+    color: black;
+}
+
+#SAL {
+    font-family: 'Cambo', Times, serif;
+    background: black;
+    color: #eb130b;   
+}
+
+#LEY {
+    font-family: 'Cambo', Times, serif;
+    background: #ed1b24;
+    color: black;   
+}

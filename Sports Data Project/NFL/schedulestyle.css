@@ -1,0 +1,238 @@
+ #ARZ {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #97233f;
+ 	color: black;
+ }
+
+ #ATL {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #a6192e;
+ 	color: black;
+ }
+ 
+ #BAL {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #241773;
+ 	color: #d0b240;
+ }
+
+ #BUF {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #00338d;
+ 	color: #c8102e;
+ }
+
+ #CAR {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #0085ca;
+ 	color: black;
+ }
+
+ #CHI {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #051c2c;
+ 	color: #dc4405;
+ }
+
+ #CIN {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #fc4c02;
+ 	color: black;
+ }
+
+ #CLE {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #382f2d;
+ 	color: #eb3300;
+ }
+
+ #DAL {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #869397;
+ 	color: #041e42;
+ }
+
+ #DEN {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #fc4c02;
+ 	color: #0c2340;
+ }
+
+ #DET {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #0069b1;
+ 	color: #a2aaad;
+ }
+
+ #GB {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #203731;
+ 	color: #ffb81c;
+ }
+
+ #HOU {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #091f2c;
+ 	color: #a6192e;
+ }
+
+ #IND {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #003a70;
+ 	color: white;
+ }
+
+ #JAX {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #006073;
+ 	color: black;
+ }
+
+ #KC {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #c8102e;
+ 	color: #ffb81c;
+ }
+
+ #LAC {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #0072ce;
+ 	color: #ffb81c;
+ }
+
+ #LAR {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #003593;
+ 	color: #ffd100;
+ }
+
+ #LV {
+	font-family: 'Cambo', Times, serif;
+	background-color: black;
+	color: #a5acaf;
+ }
+ #MIA {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #008e97;
+ 	color: #f58220;
+ }
+
+ #MIN {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #4f2683;
+ 	color: #ffc62f;
+ }
+
+ #NE {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #0c2340;
+ 	color: #a2aaad;
+ }
+
+ #NO {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #d3bc8d;
+ 	color: black;
+ }
+
+ #NYG {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #001e62;
+ 	color: white;
+ }
+
+ #NYJ {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #0c371d;
+ 	color: white;
+ }
+
+ #PHI {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #014A53;
+ 	color: #bbc4c9;
+ }
+
+ #PIT {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: black;
+ 	color: #ffb81c;
+ }
+
+ #SF {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #aa0000;
+ 	color: #c8aa76;
+ }
+
+ #SEA {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #001433;
+ 	color: #4dff00;
+ }
+
+ #TB {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #a30d2d;
+ 	color: #3d3935;
+ }
+
+ #TEN {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #0c2340;
+ 	color: #4b92db;
+ }
+
+ #WAS {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #882633;
+ 	color: #ffcd00;
+ }
+
+ #OAK {
+	font-family: 'Cambo', Times, serif;
+	background-color: black;
+	color: #a5acaf;
+ }
+
+ #RAI {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: black;
+ 	color: #a5acaf;
+ }
+
+ #RAM {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #071A7B;
+ 	color: #F5D200;
+ }
+
+ #STL {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #002244;
+ 	color: #B3995D;
+ }
+
+ #SD {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #04204C;
+ 	color: #F2C206;
+ }
+
+ #BLT {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: white;
+ 	color: #041A74;
+ }
+
+ #HST {
+ 	font-family: 'Cambo', Times, serif;
+ 	background-color: #478FC1;
+ 	color: white;
+ }
+
+#TBD {
+	font-family: 'Cambo', Times, serif;
+	background-color: white;
+	color: black;
+}

@@ -523,7 +523,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$yr_check = mysqli_query($db, "SELECT * FROM whatif_superbowl WHERE year = $year");
 		if (mysqli_num_rows($yr_check) == 0){
 			mysqli_query($db, "INSERT INTO whatif_superbowl (`year`) VALUES ($year)");
-		}		
+		}
 		$sqla = mysqli_query($db, "SELECT * FROM nflweek20 WHERE game = 'AFCCG'");
 		$r = mysqli_fetch_array($sqla);
 		$home = $r['homescore'];
@@ -737,17 +737,19 @@ for ($j = 1; $j <= 32; $j++) {
 	} else {
 		$confrec = 0;
 	}
-	$hermagerd = "UPDATE nflteams SET wins = $w, losses = $l, ties = $t, points = $pf, against = $pa, diff = $pf - $pa, divw = $divW, divl = $divL, confw = $confW, confl = $confL, pct = $pct, homew = $homeW, homel = $homeL, awayw = $awayW, awayL = $awayL, sov = $sov, sos = $sos, divpct = $divrec, confpct = $confrec WHERE team = '$tName'";
+	$pd = $pf - $pa;
+	if ($pd == NULL){
+		$pf = 0;
+		$pa = 0;
+		$pd = 0;
+	}
+	$hermagerd = "UPDATE nflteams SET wins = $w, losses = $l, ties = $t, points = $pf, against = $pa, diff = $pd, divw = $divW, divl = $divL, confw = $confW, confl = $confL, pct = $pct, homew = $homeW, homel = $homeL, awayw = $awayW, awayL = $awayL, sov = $sov, sos = $sos, divpct = $divrec, confpct = $confrec WHERE team = '$tName'";
 	$record = mysqli_query($db, $hermagerd);
 	if (!$record){
 		echo $tShort . ": " . mysqli_error($db) . $n;
 		echo $hermagerd . $n;
 	}
 }
-/*
-	updateDivisions() and updatePlayoffPic are functions included in the NFL's year.php page.
-	These functions contain SQL statements thatupdate the standings and playoff picture with appropriate tiebreakers.
-*/
 updateDivisions($db);
 //Update Playoff Picture
 if ($wknum <= 17) {
@@ -764,26 +766,20 @@ if ($wknum <= 17) {
 	<link rel="stylesheet" type="text/css" href="../../StyleSheet.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script>
-	/*
-		Javascript to display each week tab and the games being played that week.
-	*/
+		//JavaScript tabs
 		function openTab(evt, tabName) {
-			// Declare all variables
 			var i, tabcontent, tablinks;
 
-			// Get all elements with class="tabcontent" and hide them
 			tabcontent = document.getElementsByClassName("tabcontent");
 			for (i = 0; i < tabcontent.length; i++) {
 				tabcontent[i].style.display = "none";
 			}
 
-			// Get all elements with class="tablinks" and remove the class "active"
 			tablinks = document.getElementsByClassName("tablinks");
 			for (i = 0; i < tablinks.length; i++) {
 				tablinks[i].className = tablinks[i].className.replace(" active", "");
 			}
 
-			// Show the current tab, and add an "active" class to the button that opened the tab
 			document.getElementById(tabName).style.display = "block";
 			evt.currentTarget.className += " active";
 		}
@@ -985,7 +981,7 @@ if ($wknum <= 17) {
 
 	.tab {
 		border: 3px solid white;
-		/* background-color: chocolate; */
+
 		background-image: linear-gradient(rgb(202, 9, 19), white);
 		margin-left: 20%;
 		margin-right: 20%;
@@ -1014,7 +1010,6 @@ if ($wknum <= 17) {
 		background-color: rgba(0, 0, 0, 0);
 	}
 
-	/* Style the buttons that are used to open the tab content */
 	.tab button {
 		float: left;
 		border: none;
@@ -1035,14 +1030,12 @@ if ($wknum <= 17) {
 		min-width: 150px;
 	}
 
-	/* Change background color of buttons on hover */
 	.tab button:hover {
 		background-image: linear-gradient(black, white);
 		color: yellow;
 
 	}
 
-	/* Create an active/current tablink class */
 	.tab button.active {
 		background-image: none;
 		background-color: white;
@@ -1050,7 +1043,6 @@ if ($wknum <= 17) {
 
 	}
 
-	/* Style the tab content */
 	.tabcontent {
 		display: none;
 		padding: 6px 12px;

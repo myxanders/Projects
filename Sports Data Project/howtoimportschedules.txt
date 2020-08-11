@@ -1,0 +1,20 @@
+#Importing schedules for EFL and NFL
+
+For EFL, go to fbref.com and find the fixtures for all EFL Leagues.
+
+For NFL, go to pro-football-reference.com and find the league schedule.
+
+Click on the "Share & More" caption and select "Get table as CSV".
+
+
+#Importing MLS schedule
+
+Go to fbref.com and find the fixtures for the MLS.
+
+Keep columns with date, week number, hometeam, awayteam, homescore, and awayscore
+    (You may have to rename/add columns in Excel)
+
+Copy and paste data to Excel and navigate to Data -> Text to columns
+Using the week before the season as reference, calculate week numbers by subtracting ref date from match date.
+
+Save file as mls_schedule.csv and import to database.

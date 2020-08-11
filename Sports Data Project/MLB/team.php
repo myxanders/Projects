@@ -1,22 +1,12 @@
 <?php
 
-/*
-	Team IDs are used to reference each particular MLB team. The request for the ID can come from the team selection page or
-	through the World Series history page.
-*/
+//What id was clicked on
 $id = $_GET['id'];
 
-//Establish an array of current MLB teams. This is the haystack in which we search for the needle that is our $id
+//For use if the MLB logo is clicked on
 $mlbteams = array("ARZ", "ATL", "BAL", "BOS", "CHC", "CWS", "CIN", "CLE", "COL", "DET", "HOU", "KC", "LAA", "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "OAK", "PHI", "PIT", "SD", "SF", "SEA", "STL", "TB", "TEX", "TOR", "WAS");
 
 include("../../session.php");
-include("year.php");
-
-/*
-	While the team selection page has all current teams and branding, the World Series history contians prior locations for
-	teams, as well as era-appropriate branding. Because these older logos/colors have different reference names, these references
-	need to point back to the appropriate current MLB franchise.
-*/
 //Boston Americans became the Boston Red Sox
 if ($id == 'BA'){
 	header("location:team.php?id=BOS");
@@ -57,50 +47,41 @@ if ($id == 'NYG'){
 if ($id == 'HST'){
 	header("location:team.php?id=HOU");
 }
-//Orioles Rebrand
+//Orioles logo update
 if ($id == 'BLT'){
 	header("location:team.php?id=BAL");
 }
-//Reds Rebrand
+//Reds branding update
 if ($id == 'RED'){
 	header("location:team.php?id=CIN");
 }
-//White Sox Rebrand
+//White Sox color chnages
 if ($id == 'CHW'){
 	header("location:team.php?id=CWS");
 }
-//Angels Rebrand
+//Angels branding update
 if ($id == 'ANA'){
 	header("location:team.php?id=LAA");
 }
-//Montreal Expos moved to DC and became the Nationals
+//Montreal Expos relocated to Washington to become the Nationals
 if ($id == 'MTL'){
 	header("location:team.php?id=WSH");
 }
-//Phillies Rebrand
+//Phillies branding update
 if ($id == 'PHL'){
 	header("location:team.php?id=PHI");
 }
-/*
-	There was no World Series played in 1994. The series history page makes note of this. By clicking on the MLB logos in the
-	row on the table (referenced in Assets as TBD), the original direction is toward a team page with a tricode of 'TBD', which
-	doesn't exist. As a solution, I made clicking the MLB logo point the user to a random MLB page.
-*/
+//Random team selection
 if ($id == 'TBD'){
 	$id = mt_rand(0,29);
 	$team = $mlbteams[$id];
 	header("location:team.php?id=$team");
 }
-//Team page is now the corresponding id for future reference/query
+//Team page is now the corresponding id
 $_SESSION['id'] = $id;
 include("../../nestedsidenav.php");
 $sp = "&nbsp";
 $n = "<br>";
-
-/*
-	The mlbteams table in the database contains information for the current season, as wells as historical data such as division
-	titles, league pennants, and World Series championships. A team page should include all this information, so we grab it all.
-*/
 $teamcheck = mysqli_query($db, "SELECT * FROM mlbteams WHERE teamShort = '" . $id . "'");
 $r = mysqli_fetch_array($teamcheck);
 $team = $r['team'];
@@ -118,11 +99,6 @@ $lastwin = $a['year'];
 $app_check = mysqli_query($db, "SELECT year FROM ws_history WHERE loserid = '$teamid' ORDER BY year DESC");
 $b = mysqli_fetch_array($app_check);
 $lastloss = $b['year'];
-
-/*
-	The $recent variable points to the most recent World Series appearance, which would either be their most recent win or
-	their most recent loss.
-*/
 if ($lastwin > $lastloss){
 	$recent = $lastwin;
 }
@@ -139,22 +115,15 @@ if ($pens > 0){
 }
 
 
-//We want to check for grammar because the number of appearances varies from team to team.
+//Grammar checks
 if ($pens == 1){
 	$apps = $pens . " appearance";
 }
 else {
 	$apps = $pens . " appearances";
 }
-/*
-	This is for calculating how long each team has been a member of the MLB. The $current variable is pulled from year.php,
-	which is a simple file that stores the year corresponding to the current season, so as to not require hard-coded maintenance
-	across the file system for every turn of the calendar.
-	The purpose of this block is to make sure the corresponding sentence utilizes proper grammar with respect to how long the team
-	has been around.
-*/
-
-$numszns = $current - $est;
+//Math and Grammar Checks
+$numszns = date("Y") - $est;
 $lastdigit = substr($numszns, -1);
 $szns = "";
 if ($lastdigit == 1 && $numszns != 11){
@@ -172,22 +141,15 @@ if ($lastdigit == 1 && $numszns != 11){
 	<head>
 		<meta charset="UTF-8">
 		<link href='https://fonts.googleapis.com/css?family=Cambo' rel='stylesheet'>
-		<!-- Each team Web page is customized to refer to that specific team. 
-			 The stylesheet referenced is a php file that allows for conditional coloring of each page
-			 to make it more team-spefic in appearance. -->
 		<title><?php echo $teamLoc . " " . $team;?></title>
 		<link rel='stylesheet' type='text/css' href='teamStyle.php'/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="icon" href="favicon2.ico">
 	</head>
 	<body>
+		<!--Display World Series and pennant wins-->
 		<div class="trophies">
 				<?php 
-				/*
-					If the team has won a World Series, we make note of how many with a small trophy and the number of times
-					they've won. The same deal goes for league pennants, appropriately colored for each league, depending on
-					which league the team is a member of.
-				*/
 					if ($wswins > 0) {
 				?>
 					<img src="../../Assets/MLB/trophy.png" id = "<?php echo "trophy";?>" height=75 width=75/>
@@ -216,14 +178,7 @@ if ($lastdigit == 1 && $numszns != 11){
 			<div class="bio" style="width: 30%; margin-left: .5%; display: inline-block;">
 				<p>
 					The <?php echo $teamLoc . " " . $team?> are in their <?php echo $szns?> season in the MLB. To date, they have won <?php echo $wswins . " World Series in " . $apps . ". ";
-					/*
-						If the team has won a World Series, we'll add that to the string, as it's important info for the team's
-						history. If they won their last appearance, we don't need to reiterate when the last time they made it
-						was. If they haven't won a World Series, we'll just list their last appearance, as that's the highest
-						success they've seen.
-					*/
 					if ($wswins > 0){
-
 						echo $win_string . ". ";
 						if ($lastwin != $recent){
 							echo $app_string;
@@ -240,10 +195,6 @@ if ($lastdigit == 1 && $numszns != 11){
 				<table class = "records">
 				<caption style="font-weight: bold; padding-bottom: 5px;">
 					<?php 
-					/*
-						The following table incorporates the current seasons' standings, highlighting where the selected team
-						falls in their division.
-					*/
 					if ($league == 'American'){
 						$alnl = 'AL';
 					}
