@@ -8,7 +8,7 @@ if(isset($_POST["import"]))
   if($extension == 'sql')
   {
     //Establish connection by calling an existing database
-   $connect = mysqli_connect(T_DB_SERVER, T_DB_USERNAME, T_DB_PASSWORD, "phpmyadmin");
+   $connect = mysqli_connect(T_DB_SERVER,T_DB_USERNAME,T_DB_PASSWORD, "phpmyadmin");
    $output = '';
    $count = 0;
    $file_data = file($_FILES["database"]["tmp_name"]);
