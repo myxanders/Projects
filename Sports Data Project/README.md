@@ -1,5 +1,6 @@
 # Comprehensive Sports Data Web Application
 
+Note: Assets and database used for this project not included in this repository.
 
 ### Inspiration
 Originally this project was confined in separate Microsoft Excel documents utilizing multiple formulas and conditional formatting to customize cells with official team colors. Eventually the size and complexion of the files caused slow runtimes and even crashes.
